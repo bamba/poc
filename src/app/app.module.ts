@@ -5,7 +5,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
-
+import { ProfilePage } from '../pages/profiles/profile';
 import { ContributionsPage } from '../pages/contributions/contributions';
 import { StaffPerformancePage } from '../pages/staff-performance/staff-performance';
 import { AdministrationPage } from '../pages/administration/administration';
@@ -35,7 +35,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     FraudManagementPage,
     AnalyticsPage,
     MyAccountPage,
-    LogOutPage
+    LogOutPage,
+    ProfilePage
   ],
   imports: [
     BrowserModule,
@@ -55,7 +56,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     FraudManagementPage,
     AnalyticsPage,
     MyAccountPage,
-    LogOutPage
+    LogOutPage,
+    ProfilePage
   ],
   providers: [
     StatusBar,

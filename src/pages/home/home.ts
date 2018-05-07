@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import {ProfilePage} from '../profiles/profile'
+import {ProfilePage} from '../profiles/profile';
 
 @Component({
   selector: 'page-home',
@@ -12,9 +12,8 @@ export class HomePage {
     this.navCtrl=navCtrl;
   }
 
-  navigate()
-  {
-    this.navCtrl.push(ProfilePage)
+  navigate() {
+    this.navCtrl.push(ProfilePage);
 
   }
 }
