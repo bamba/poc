@@ -5,6 +5,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { ContributionsPage } from '../pages/contributions/contributions';
+import { StaffPerformancePage } from '../pages/staff-performance/staff-performance';
+import { AdministrationPage } from '../pages/administration/administration';
+import { CorrespondencePage } from '../pages/correspondence/correspondence';
+import { FormsPage } from '../pages/forms/forms';
+import { PaymentsPage } from '../pages/payments/payments';
+import { FraudManagementPage } from '../pages/fraud-management/fraud-management';
+import { AnalyticsPage } from '../pages/analytics/analytics';
+import { MyAccountPage } from '../pages/my-account/my-account';
+import { LogOutPage } from '../pages/log-out/log-out';
 
 @Component({
   templateUrl: 'app.html'
@@ -21,8 +31,18 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { title: 'Login', component: HomePage },
+      //{ title: 'List', component: ListPage },
+      { title: 'Administration', component: AdministrationPage},
+      { title: 'Contributions', component: ContributionsPage },
+      { title: 'Staff Performance', component: StaffPerformancePage },
+      { title: 'Correspondence', component: CorrespondencePage },
+      { title: 'Forms', component: FormsPage },
+      { title: 'Payments', component: PaymentsPage },
+      { title: 'Fraud Management', component: FraudManagementPage },
+      { title: 'Analytics', component: AnalyticsPage },
+      { title: 'My Account', component: MyAccountPage },
+      { title: 'Log Out', component: LogOutPage }
     ];
 
   }
