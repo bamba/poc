@@ -18,7 +18,16 @@ export class ContributionsPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  DateFrom : String ="";
+  DateFromValue: Date = new Date();
+  DateTo: String = new Date().toLocaleDateString();
+
   ionViewDidLoad() {
+
+    this.DateFromValue.setFullYear(-10,1,1);
+
+    this.DateFrom = this.DateFromValue.toLocaleDateString()
+
     console.log('ionViewDidLoad ContributionsPage');
   }
 

@@ -1,4 +1,4 @@
-<!--
+<!-- <!--
   Generated template for the ContributionsPage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
@@ -19,10 +19,53 @@
 
 <ion-content>
 
+
+    <ion-list>
+
+        <ion-list-header  color='light'>
+            EMPLOYMENT DATE
+          </ion-list-header>
+  
+  <ion-item>
+  
+    <ion-grid>
+                <ion-row>
+                      <ion-col col-12>
+                           
+      <ion-card class="card-mini">
+
+          <ion-list>
+
+              <ion-item > 
+                <span class="labels">Date From : <br/></span>                
+                <span class=".">{{DateFrom | date:'dd.MM.yyyy'}}</span>  
+               </ion-item>
+           
+
+               <ion-item > 
+                  <span class="labels">Date To : <br/></span>                
+                  <span class=".">{{DateTo | date:'dd.MM.yyyy'}}</span> 
+            
+                </ion-item>
+          </ion-list>
+
+
+          
+
+      </ion-card>
+
+                      </ion-col>
+                </ion-row>
+    </ion-grid>
+  </ion-item>
+    </ion-list>
+
+
+
   <ion-list>
 
       <ion-list-header  color='light'>
-EMPLOYER CONTRIBUTIONS
+          EMPLOYER CONTRIBUTIONS
         </ion-list-header>
 
 <ion-item>
@@ -31,12 +74,12 @@ EMPLOYER CONTRIBUTIONS
               <ion-row>
                     <ion-col col-6>
                          
-    <ion-card item-height="300">
+    <ion-card  class="card">
        
         <ion-list>
 
             <ion-item text-wrap>
-                Period of Contribution
+                Period of <br/> Contributions
              </ion-item>
 
             <ion-item >
@@ -56,13 +99,13 @@ EMPLOYER CONTRIBUTIONS
 
     <ion-col col-6>
                          
-        <ion-card>
+        <ion-card  class="card">
             
 
             <ion-list>
 
                 <ion-item text-wrap>
-                    Total Contribution
+                    Total <br/> Contributions
                  </ion-item>
 
                 <ion-item class='money'>
@@ -95,12 +138,12 @@ EMPLOYER CONTRIBUTIONS
                 <ion-row>
                       <ion-col col-6>
                            
-      <ion-card item-height="300">
+      <ion-card class="card">
          
           <ion-list>
   
               <ion-item text-wrap>
-                  Period of Contribution
+                  Period of <br/>  Contributions
                </ion-item>
   
               <ion-item >
@@ -120,13 +163,13 @@ EMPLOYER CONTRIBUTIONS
   
       <ion-col col-6>
                            
-          <ion-card>
+          <ion-card class="card">
               
   
               <ion-list>
   
                   <ion-item text-wrap>
-                      Total Contribution
+                      Total <br/> Contributions
                    </ion-item>
   
                   <ion-item class='money'>
@@ -150,11 +193,10 @@ EMPLOYER CONTRIBUTIONS
 
   
 <ion-list-header text-center color='light'>
-    Contribution due date
-            </ion-list-header>
-    
+  <ion-icon name='alarm'></ion-icon>    Contribution due date <br/> 25.04.2018
 
+  </ion-list-header>  
 
 </ion-list>
 
-</ion-content>
+</ion-content> -->

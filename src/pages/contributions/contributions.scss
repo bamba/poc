@@ -22,4 +22,18 @@ page-contributions {
     {
         float:right;
     }
+    
+    .card
+    {
+       min-height: 175px;
+    }
+    .card-mini
+    {
+       min-height: 100px;
+    }
+    .labels
+    {
+        font-style: italic;
+        font-weight: bold;
+    }
 }
