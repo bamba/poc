@@ -21,7 +21,20 @@ page-staff-performance {
        overflow: initial;
        white-space: initial;
     }
-    
+      .cardCentered
+    { 
+     font-size: larger;
+     line-height: 0.8em;
+             text-align: center;
+             align-content: center;
+             line-break: inherit;
+        align-items: center;
+       min-height: 100px;
+       width:100%;  
+       border: 0px #ffffff color($colors, light);
+       overflow: initial;
+       white-space: initial;
+    }
     .card > span
     { 
  margin: auto auto auto 16px; 
