@@ -1,3 +1,43 @@
-page-staff-performance {
+page-staff-performance { 
+    .small-labels
+    {
+        font-style: italic; 
+        font-size: smaller;
+        overflow-wrap:normal;
+    }
 
+    .red {height: 120px; 
+        overflow-wrap: break-word;
+        background: red;
+    word-wrap: break-word;}
+
+    .card
+    { 
+        margin: 0 auto;
+        padding: 0 auto;
+       min-height: 120px;
+       width:100%;  
+       border: 0px #ffffff color($colors, primary);
+       overflow: initial;
+       white-space: initial;
+    }
+    
+    .card > span
+    { 
+ margin: auto auto auto 16px; 
+ font-size: x-small;   
+    }
+    .card>ion-icon
+    { 
+        align-self: center;
+ margin: auto auto auto 16px; 
+ font-size:40px;
+    }
+    .cardHead
+    {  
+       font-size: xx-small;  
+         overflow: initial;
+    white-space: initial;
+    }
+    
 }

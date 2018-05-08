@@ -10,4 +10,6 @@ import { StaffPerformancePage } from './staff-performance';
     IonicPageModule.forChild(StaffPerformancePage),
   ],
 })
-export class StaffPerformancePageModule {}
+export class StaffPerformancePageModule {
+  title: string = "Staff Performance";
+}

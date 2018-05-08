@@ -15,7 +15,82 @@
 
 </ion-header>
 
-
 <ion-content padding>
+  <ion-list-header color='light'>
+    {{title}}
+  </ion-list-header>
 
+  <ion-item>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-4>
+          <ion-card class="card">
+              <ion-card-header  class="cardHead">
+            Date & Time of Application</ion-card-header>
+            <span>{{applicationDate | date:'dd.MM.yyyy'}}</span>
+          </ion-card>
+        </ion-col>
+        <ion-col col-4>
+            <ion-card class="card">
+                <ion-card-header  class="cardHead">
+            Status</ion-card-header>
+            <span>IN PROCESS</span>
+          </ion-card>
+        </ion-col>
+        <ion-col col-4>
+            <ion-card class="card">
+                <ion-card-header  class="cardHead">
+            Details of Application</ion-card-header> 
+                <button ion-button outline>Secondary</button>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col col-4>
+            <ion-card class="card">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+              
+            </ion-card>
+          </ion-col>
+          <ion-col col-4>
+              <ion-card class="card">
+                  <ion-card-header  class="cardHead">
+              Status</ion-card-header>
+              <span>IN PROCESS</span>
+            </ion-card>
+          </ion-col>
+          <ion-col col-4>
+              <ion-card class="card">
+                  <ion-card-header  class="cardHead">
+              Details of Application</ion-card-header> 
+                  <button ion-button outline>Secondary</button>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-4>
+              <ion-card class="card">
+                  <ion-card-header  class="cardHead">
+                Date & Time of Application</ion-card-header>
+                <span>{{applicationDate | date:'dd.MM.yyyy'}}</span>
+              </ion-card>
+            </ion-col>
+            <ion-col col-4>
+                <ion-card class="card">
+                    <ion-card-header  class="cardHead">
+                Status</ion-card-header>
+                <span>IN PROCESS</span>
+              </ion-card>
+            </ion-col>
+            <ion-col col-4>
+                <ion-card class="card">
+                    <ion-card-header  class="cardHead">
+                Details of Application</ion-card-header> 
+                    <button ion-button outline>Secondary</button>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+    </ion-grid>
+    
+  </ion-item>
 </ion-content>

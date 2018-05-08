@@ -24,25 +24,25 @@ export class MyApp {
 
   rootPage: any = HomePage;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{title: string, component: any,icon: string}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Login', component: HomePage },
+      { title: 'Login', component: HomePage,  icon: 'key'},
       //{ title: 'List', component: ListPage },
-      { title: 'Administration', component: AdministrationPage},
-      { title: 'Contributions', component: ContributionsPage },
-      { title: 'Staff Performance', component: StaffPerformancePage },
-      { title: 'Correspondence', component: CorrespondencePage },
-      { title: 'Forms', component: FormsPage },
-      { title: 'Payments', component: PaymentsPage },
-      { title: 'Fraud Management', component: FraudManagementPage },
-      { title: 'Analytics', component: AnalyticsPage },
-      { title: 'My Account', component: MyAccountPage },
-      { title: 'Log Out', component: LogOutPage }
+      { title: 'Administration', component: AdministrationPage,  icon: 'navigate'},
+      { title: 'Contributions', component: ContributionsPage,  icon: 'cash' },
+      { title: 'Staff Performance', component: StaffPerformancePage,  icon: 'pulse' },
+      { title: 'Correspondence', component: CorrespondencePage,  icon: 'mail' },
+      { title: 'Forms', component: FormsPage,  icon: 'list' },
+      { title: 'Payments', component: PaymentsPage ,  icon: 'card'},
+      { title: 'Fraud Management', component: FraudManagementPage,  icon: 'cash' },
+      { title: 'Analytics', component: AnalyticsPage,  icon: 'options' },
+      { title: 'My Account', component: MyAccountPage ,  icon: 'person'},
+      { title: 'Log Out', component: LogOutPage ,  icon: 'exit'}
     ];
 
   }
