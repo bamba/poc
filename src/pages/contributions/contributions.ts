@@ -24,7 +24,7 @@ export class ContributionsPage {
 
   ionViewDidLoad() {
 
-    this.DateFromValue.setFullYear(-10,1,1);
+    this.DateFromValue.setFullYear(2009,12,1);
 
     this.DateFrom = this.DateFromValue.toLocaleDateString();
 
