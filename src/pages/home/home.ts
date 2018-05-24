@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import {ProfilePage} from '../profiles/profile';
+import {ContributionsPage} from '../contributions/contributions';
+import { GlobalProvider } from "../../providers/GlobalProvider";
 
 @Component({
   selector: 'page-home',
@@ -8,12 +9,14 @@ import {ProfilePage} from '../profiles/profile';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,public global: GlobalProvider) {
     this.navCtrl=navCtrl;
+    this.global=global;
   }
 
-  navigate() {
-    this.navCtrl.push(ProfilePage);
-
+  navigate() 
+  {
+    this.navCtrl.setRoot(ContributionsPage);
+    this.global.LoggedIn = true;
   }
 }
